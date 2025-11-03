@@ -37,6 +37,7 @@ jobs:
     - name: Format Python code with ruff
       run: |
         ruff format .
+        ruff check . --fix --unsafe-fixes
     
     - name: Install clang-format
       run: |
